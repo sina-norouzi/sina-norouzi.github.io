@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="description" content="A personal astrophotography portfolio. A small collection of galaxies, nebulae, and nights spent looking up.">
+  <title>After dark — Astrophotography</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0c10'/%3E%3Cpath d='M16 5l2.5 8.5L27 16l-8.5 2.5L16 27l-2.5-8.5L5 16l8.5-2.5z' fill='%23ded8cb'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a class="wordmark" href="#">After dark<span class="star" aria-hidden="true">✦</span></a><span class="eyebrow">Astrophotography</span></header>
+  <main>
+    <section class="intro" aria-labelledby="heading"><div><p class="eyebrow">A personal collection</p><h1 id="heading">Nights spent<br><em>looking up.</em></h1></div><p class="intro-note">A few small windows<br>into a very big universe.</p></section>
+    <section class="gallery" aria-label="Photograph collection">
+      <figure class="wide"><a class="photo" href="nebula.jpeg" data-title="Clouds of light" data-index="0" aria-label="View Clouds of light in full"><img src="nebula.jpeg" width="3816" height="2140" alt="A rich red nebula threaded with dark clouds against a dense field of stars" fetchpriority="high"><span class="view">View photograph <span aria-hidden="true">↗</span></span></a><figcaption><span><span class="number">01</span> Clouds of light</span><span class="category">Nebula</span></figcaption></figure>
+      <figure class="galaxy"><a class="photo" href="galaxy.jpeg" data-title="A distant glow" data-index="1" aria-label="View A distant glow in full"><img src="galaxy.jpeg" width="3788" height="2124" alt="An elongated galaxy with a luminous white core surrounded by blue-white stars" loading="lazy"><span class="view">View photograph <span aria-hidden="true">↗</span></span></a><figcaption><span><span class="number">02</span> A distant glow</span><span class="category">Galaxy</span></figcaption></figure>
+      <figure class="spiral"><a class="photo" href="spiral.jpeg" data-title="Quiet spiral" data-index="2" aria-label="View Quiet spiral in full"><img src="spiral.jpeg" width="528" height="589" alt="A small face-on spiral galaxy with softly glowing arms in a dark star field" loading="lazy"><span class="view">View photograph <span aria-hidden="true">↗</span></span></a><figcaption><span><span class="number">03</span> Quiet spiral</span><span class="category">Galaxy</span></figcaption></figure>
+    </section>
+  </main>
+  <footer><span>After dark <span class="footer-dot">/</span> A personal astrophotography portfolio</span><a href="#">Back to top ↑</a></footer>
+  <dialog aria-label="Photograph viewer"><div class="viewer-top"><p id="viewer-title"></p><button class="close" aria-label="Close photograph">Close <span aria-hidden="true">×</span></button></div><img id="viewer-image" alt=""><div class="viewer-bottom"><button class="previous" aria-label="Previous photograph">← Previous</button><span id="counter" aria-live="polite"></span><button class="next" aria-label="Next photograph">Next →</button></div></dialog>
+</body>
+</html>
